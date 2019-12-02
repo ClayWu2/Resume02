@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的简历</title>
+ 
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="topNavBar">
-        <img src="#" alt="一张图"/>
-        <nav>
-            <ul>
+    <div class="topNavBar clearfix" >
+        <a class="logo" href="#" alt="logo" style="float: left;">
+            <span class="rs">RS</span>
+            <span class="card">card</span>
+        </a>
+        <nav style="float: right;">
+            <ul class="clearfix">
                 <li> <a href="">About</a></li>
                 <li> <a href="">Skills</a></li>
                 <li> <a href="">Experience</a></li>
@@ -23,11 +28,11 @@
     </div>
     <main>
         <div class="card">
-            <div class="picture">
-                <img src="" alt="照片">
-            </div>
-            <div class="text">           
-                <div class="profile">
+            <div class="pictureAndText">
+                <div class="picture">
+                    <img src="" alt="照片">
+                </div>    
+                <div class="text">
                     <span class="welcome">hello</span>
                     <h1>吴鹏</h1>
                     <p>一名前端开发</p>
@@ -41,15 +46,15 @@
                         <dd>597934661@qq.com</dd>                
                     </dl>
                 </div>
-                <footer>
-                        <a href="">.</a>
-                        <a href="">.</a>
-                        <a href="">.</a>
-                        <a href="">.</a>
-                        <a href="">.</a>
-                        <a href="">.</a>
-                </footer>
-            </div>                                        
+            </div>                       
+            <footer>
+                <a href="">.</a>
+                <a href="">.</a>
+                <a href="">.</a>
+                <a href="">.</a>
+                <a href="">.</a>
+                <a href="">.</a>
+            </footer>                                                
         </div>
         <a class="button" href="">下载</a>
         <p>
@@ -57,6 +62,31 @@
         技能：前端开发，Rails 开发，Node.js 开发
         </p>
     </main>
-   
+    <section>
+        <h2>技能</h2>
+        <ol>
+            <li>HTML 5 &amp; CSS 3</li>
+            <li>Javascript</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ol>
+    </section>
+    <section>
+        <h2>作品</h2>
+        <nav>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+        </nav>
+        <div class="jobs">
+            <div class="big">1</div>
+            <div class="small">2</div>
+            <div class="small">3</div>
+        </div>
+    </section>
 </body>
 </html>
