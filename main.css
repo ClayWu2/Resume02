@@ -1,31 +1,59 @@
 body{
+    margin:0;
     background: black;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .clearfix::after{
     content:'';
-    display: block;
+    display:block;
     clear: both;
 }
 .topNavBar>nav>ul{
     list-style: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 .topNavBar>nav>ul>li{
     float: left;
-    margin-left: 14px;
+    margin-left:14px;
     margin-right: 14px;
 }
 .topNavBar>nav>ul>li>a{
-    text-decoration: none;
     font-size: 12px;
-    font-weight: bold;
     color: #b7b7b7;
-    border-bottom: 3px solid transparent;
-    padding-top: 5px;
+    font-weight: bold;
+    border-bottom: solid 3px transparent;
+    border-top: solid 3px transparent;
     padding-bottom: 5px;
+    padding-top: 5px;
     display: block;
 }
 .topNavBar>nav>ul>li>a:hover{
-    border-bottom: 3px solid #e06567;
+    border-bottom: #e6686a solid 3px;
+}
+.topNavBar .logo {
+    font-size: 24px;
+    font-family: "Arial Black";
+    padding-top: 3px;
+    padding-bottom: 4px;
+
+}
+.topNavBar .logo .rs{
+    color:#e6686a;
+    margin-right: 4px;
+    
+}
+.topNavBar .logo .card{
+    color: #9a9da2;
+}
+.topNavBar{padding: 20px 16px 20px 16px;}
+
+.topNavBar>nav{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
 }
