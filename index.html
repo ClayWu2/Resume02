@@ -146,19 +146,39 @@
             
         </ol>
     </section>
-    <section>
+    <section class="portfolio">
         <h2>作品</h2>
         <nav>
-            <ol>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+            <ol class="clearfix">
+                <li id="portfolioAll">所有</li>
+                <li id="portfolioFramework">框架</li>
+                <li id="portfolioVallina">原生JS&amp;CSS</li>
             </ol>
+            <div id="portfolioBar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
         </nav>
-        <div class="jobs">
-            <div class="big">1</div>
-            <div class="small">2</div>
-            <div class="small">3</div>
+        <script>
+            portfolioAll.onclick=function(){
+                portfolioBar.className="bar state-1"
+            }
+            portfolioFramework.onclick=function(){
+                portfolioBar.className="bar state-2"
+            }
+            portfolioVallina.onclick=function(){
+                portfolioBar.className="bar state-3"
+            }
+        </script>
+        <div class="works">
+            <div class="big">
+                <img src="./img/1.jpg" alt="作品1">
+            </div>
+            <div class="small">
+                <img src="./img/2.jpg" alt="作品2">
+            </div>
+            <div class="small">
+                <img src="./img/3.jpg" alt="作品3">
+            </div>
         </div>
     </section>
 </body>
